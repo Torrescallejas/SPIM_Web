@@ -1,0 +1,10 @@
+<div class="modalView">
+    <p class="title">Agregar Plato</p>
+    <form #f="ngForm" (ngSubmit)="addData(f)" class="formulario">
+        <!-- <p>{{ data.name }}</p> -->
+        <input type="text" class="input-Mesa" name="name" placeholder="Nombre del Plato" ngModel>
+        <input type="text" class="input-Mesa" name="precio" placeholder="Precio" ngModel>
+        <button type="submit" class="btn guardar-btn">Agregar Plato</button>
+    </form>
+    <button (click)="nose()" class="btn btn-primary">Salir</button>
+</div>

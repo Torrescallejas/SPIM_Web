@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "SPIM_Web",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

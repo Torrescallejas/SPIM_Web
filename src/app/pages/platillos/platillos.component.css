@@ -1,0 +1,207 @@
+.cerrarSesion {
+    position: fixed;
+    padding: 10px;
+    z-index: 1;
+    right: 0;
+    top: 0;
+}
+
+.navbar {
+    background-color: #2f3a2c;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 0;
+}
+
+.btn-main {
+    background-color: antiquewhite;
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.btnAgregar{
+    background-color: #849343;
+}
+
+.btnEditar {
+    background-color: #8A5C53;
+}
+
+.btnEliminar {
+    background-color: #C5A073;
+}
+
+.btnAgregar:hover, .btnEditar:hover, .btnEliminar:hover {
+    background-color: rgb(102, 114, 114);
+}
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    background-color: #FDFDFD;
+
+    position: relative;
+}
+
+.categoriasPlatos {
+    padding: 15px;
+    background-color: #cb9f9f;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.categoryBtn {
+    height: 100px;
+    background-color: #2D1D1D;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid black;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ------------------------------------------------------ */
+.sidebar {
+    background-color: #C0703C;
+    height: 621px;
+    border: 0.5px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    padding: 10px;
+    text-align: center;
+    background-color: #2f3a2c;
+    color: white;
+}
+
+.ordenesMesa{
+    padding: 0px 20px;
+}
+
+.pedido {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.opcionesPedido{
+    background-color: bisque;
+}
+
+.borrarPedido {
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+    color: #FDFDFD;
+    border-top: 0.5px solid black;
+    background-color: #2D1D1D;
+}
+
+.borrarPedido:hover {
+    background-color: rgb(102, 114, 114);
+}
+
+
+.Nose {
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    padding: 10px;
+    background-color: #EFC67E;
+    font-weight: 700;
+}
+
+.borrarPagar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.boton {
+    background-color: #2D1D1D;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 30px;
+}
+
+.boton:hover {
+    background-color: rgb(102, 114, 114);
+}
+
+.showActual {
+    background-color: #4e3636
+}
+/* -------------------------------------------- */
+
+.botonEdit {
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 15px;
+}
+
+.botonDelete {
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 15px;
+
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 20px;
+    border: none;
+}
+
+.botonDelete:hover {
+    background-color: rgb(85, 45, 45);
+}
+
+.desaparecer{
+    display: none;
+}
+
+.link {
+    width: 100%;
+    height: 100%;
+    /* background-color: bisque; */
+    text-decoration: none;
+    color: #F7F6EC;
+    font-weight: 700;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.volver {
+    position: absolute;
+    bottom: 0;
+}
+
+.btn-Regresar {
+    font-size: 26px;
+    font-weight: 700;
+    padding: 60px;
+}

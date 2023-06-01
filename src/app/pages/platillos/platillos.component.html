@@ -1,0 +1,45 @@
+<button class="cerrarSesion" (click)="cerrarSesion()">Cerrar Sesión</button>
+
+<div class="navbar">
+    <a class="btn-main btnAgregar" (click)="openDialogAgregar()">Agregar</a>
+    <a class="btn-main btnEditar" (click)="editButton()">Editar</a>
+    <a class="btn-main btnEliminar" (click)="deleteButton()">Eliminar</a>
+</div>
+<main class="contenedor">
+    <div class="categoriasPlatos">
+        <div class="categoryBtn" *ngFor="let data of noseDos">
+            <a class="link" (click)="nose(data.id, data.platillo, data.precio)" (click)="actualizarContador(data.id, data.platillo, data.precio, data.contadorVenta)">
+                {{ data.platillo }}
+                <p>${{ data.precio }}</p>
+            </a>
+            <button class="botonEdit" [ngClass]="{'desaparecer': estado1}" (click)="openDialogEditar(data.id)">E</button>
+            <button class="botonDelete" [ngClass]="{'desaparecer': estado2}" (click)="eliminarPlatilloBtn(data.id)">X</button>
+        </div>
+        
+    </div>
+    <div class="sidebar">
+        <h4 class="title">Pedidos:</h4>
+        <div class="ordenesMesa">
+            <div class="pedido" *ngFor="let data of carritoCompras">
+                <p>{{ data.nombrePlato }}</p>
+                <p>$ {{ data.precioPlato }}</p>
+            </div>
+        </div>
+        <div class="opcionesPedido">
+            <button class="borrarPedido" (click)="traerPedido()">Mostrar Orden Actual</button>
+            <button class="borrarPedido" (click)="borrarPedido()">Borrar Pedido</button>
+            <div class="Nose">
+                <p>Total:</p>
+                <p>${{ sumaTotal }}</p>
+            </div>
+            <div class="borrarPagar">
+                <button class="boton" (click)="guardarOrden()">Guardar</button>
+                <button class="boton" (click)="pagarOrden()">Pagar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="volver">
+        <button class="btn-Regresar" (click)="regresarBtn()"><-</button>
+    </div>
+</main>

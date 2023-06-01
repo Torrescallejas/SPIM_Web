@@ -1,0 +1,32 @@
+/* .modalView {
+    padding: 20px;
+} */
+
+.title {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(59, 130, 24);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.formulario {
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.input-Mesa{
+    padding: 10px;
+    /* border-radius: 10px; */
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.guardar-btn {
+    margin: 10px auto;
+    width: 100px;
+    background-color: coral;
+}

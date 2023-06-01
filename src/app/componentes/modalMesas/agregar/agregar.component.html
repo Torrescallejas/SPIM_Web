@@ -1,0 +1,10 @@
+<!-- <p>agregar works!</p> -->
+<div class="modalView">
+    <p class="title">Agregar Mesa</p>
+    <form #f="ngForm" (ngSubmit)="addData(f)" class="formulario">
+        <!-- <p>{{ data.name }}</p> -->
+        <input type="text" class="input-Mesa" name="name" placeholder="Número de mesa" ngModel>
+        <button type="submit" class="btn guardar-btn">Guardar Mesa</button>
+    </form>
+    <button (click)="nose()" class="btn btn-primary">Salir</button>
+</div>

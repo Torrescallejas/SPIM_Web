@@ -1,0 +1,22 @@
+<div class="contenedor">
+    <div class="contenedor_logIn">
+        <h3 class="login-title">Iniciar Sesión</h3>
+        <div class="formulario_contenedor">
+            <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="formulario">
+                <label class="login-label">Correo:</label><br>
+                <input type="email" class="login-textbox" name="email" placeholder="Email" ngModel>
+                <br>
+                <label class="login-label">Contraseña:</label>
+                <input type="password" class="login-textbox" name="password" placeholder="Password" ngModel>
+                <br>
+                <button type="submit" class="login-btn">LOGIN</button>
+            </form>
+        </div>
+        <div class="buttonsOptions">
+            <button class="btnOp singIn-btn" (click)="registrar()">Sing In</button>
+            <button class="btnOp google-btn">Login With Google</button>
+        </div>
+    </div>
+</div>
+
+<!-- (ngSubmit)="onSubmit(f)" ---- (click)="registrar()" ---- (click)="onClick()" -->

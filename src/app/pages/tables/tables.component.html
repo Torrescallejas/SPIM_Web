@@ -1,0 +1,26 @@
+<div class="contenedor">
+    <button class="cerrarSesion" (click)="cerrarSesion()">Cerrar Sesión</button>
+    <div class="contenedor_mesas">
+        <div class="mesa" *ngFor="let data of noseDos">
+            <a class="link" (click)="nose(data['id'])">
+                #{{ data['mesa'] }}
+            </a>
+            <button class="botonEdit" [ngClass]="{'desaparecer': estado1}" (click)="openDialogEditar(data['id'])">E</button>
+            <button class="botonDelete" [ngClass]="{'desaparecer': estado2}" (click)="eliminarMesaBtn(data['id'])">X</button>
+        </div>
+        
+        
+    </div>
+
+    <div class="sidebar-left">
+        <a class="btn-main" (click)="openDialogAgregar()">
+            <p>Agregar</p>
+        </a>
+        <a class="btn-main" (click)="editButton()">
+            <p>Editar</p>
+        </a>
+        <a class="btn-main" (click)="deleteButton()">
+            <p>Eliminar</p>
+        </a>
+    </div>
+</div>

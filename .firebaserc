@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "spimanager-ac17e": {
+      "hosting": {
+        "SPIM_Web": [
+          "spimanager-ac17e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "spimanager-ac17e"
+  }
+}

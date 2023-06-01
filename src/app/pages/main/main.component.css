@@ -1,0 +1,73 @@
+.cerrarSesion {
+    position: fixed;
+    padding: 10px;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+}
+
+
+.body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    font-family: poppins,sans-serif;
+    background-color: #000
+}
+
+.contenido {
+    margin-top: 50px;
+}
+
+.metiensabandonado {
+    font-size: 70px;
+    font-weight: 100;
+    color: #fff
+}
+
+.SCsection.metiensabandonado {
+    margin-bottom: 0; /* Elimina el margen inferior del h2 */
+}
+
+.metiensabandonado span {
+    padding: 25px;
+    margin-bottom: 10px;
+    -webkit-background-clip: text;
+    font-weight: 900;
+    color: #000000e0;
+    text-align: center;
+    -webkit-text-stroke: 3.5px transparent;
+    background-image: linear-gradient(90deg,#007CF0,#00DFD8)
+}
+
+.cuantotiempotxt {
+    font-size: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #d2d2d2
+}
+
+.SCsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 25px;
+    border: 3px, solid;
+    border-radius: 15px;
+    text-decoration: none;
+    color: rgb(0, 108, 209);
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    min-width: 100px; /* Puedes cambiar este valor para que se ajuste a tus necesidades */
+}
+  

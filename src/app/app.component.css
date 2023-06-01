@@ -1,0 +1,21 @@
+.contenedorHeader {
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+    background-color: #9db399;
+    color: #32201D;
+    font-weight: 700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    margin: 0;
+}
+
+.posision {
+    top: 15px;
+    position: fixed;
+}
+
