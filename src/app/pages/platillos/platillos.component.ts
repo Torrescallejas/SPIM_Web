@@ -93,7 +93,7 @@ export class PlatillosComponent {
     const docInstance = doc(this.firestore, 'Platillos', id);
     deleteDoc(docInstance)
       .then(() => {
-        console.log('Mesa Eliminada');
+        alert('Platillo Eliminadp');
       })
       .catch((err) => {
         // console.log(err);
@@ -128,7 +128,7 @@ export class PlatillosComponent {
 
     const uidDueño = await this.userService.obtenerUID();
     const idMesa = this.userService.idMesa;
-    console.log(uidDueño);
+    // console.log(uidDueño);
 
     const datos = {
       fecha: fecha,
@@ -144,7 +144,7 @@ export class PlatillosComponent {
     const collectionInstance = collection(this.firestore, 'Ordenes');
     addDoc(collectionInstance, datos)
     .then(() => {
-      console.log('Orden Guardana con Exito');
+      alert('Orden Guardana con Exito');
       // console.log(datos)
     })
     .catch((err) => {
@@ -225,7 +225,7 @@ export class PlatillosComponent {
       this.temp = doc;
       // console.log(this.temp[0]['contadorVenta']);
     });
-    console.log(this.temp);
+    // console.log(this.temp);
 
     let contador = this.temp[0]['contadorVenta'];
     contador--;
@@ -240,8 +240,8 @@ export class PlatillosComponent {
       contadorVenta: contador,
       estadoPagado: false
     };
-    console.log("---------");
-    console.log(datos);
+    // console.log("---------");
+    // console.log(datos);
     
     const docInstance = doc(this.firestore, 'Platillos', idPlato);
     
@@ -284,8 +284,8 @@ export class PlatillosComponent {
       this.temp = doc1;
       // console.log(this.temp[0]['contadorVenta']);
     });
-    console.log("---------");
-    console.log(this.temp);
+    // console.log("---------");
+    // console.log(this.temp);
 
     let idPlato = this.temp[0]['id'];
     
@@ -297,13 +297,9 @@ export class PlatillosComponent {
       precioPagar: this.temp[0]['precioPagar'],
       estadoPagado: true
     };
-    console.log("---------");
-    console.log(datos);
-    // if(this.temp) {
-    //   this.carritoCompras = this.temp[0]['platillo']
-    // }else {
-    //   this.userService.carritoCompra = [];
-    // }
+    // console.log("---------");
+    // console.log(datos);
+    
     
     const docInstance = doc(this.firestore, 'Ordenes', idPlato);
     
@@ -338,7 +334,8 @@ export class PlatillosComponent {
     });
     if(this.temp) {
       this.carritoCompras = this.temp[0]['platillo'];
-      this.sumaTotal = this.temp[0]['precioPagar']
+      this.sumaTotal = this.temp[0]['precioPagar'];
+      alert("Existe un pedido");
     }else {
       this.userService.carritoCompra = [];
     }

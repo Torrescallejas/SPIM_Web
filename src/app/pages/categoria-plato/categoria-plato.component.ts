@@ -85,6 +85,8 @@ export class CategoriaPlatoComponent implements OnInit {
       .catch((err) => {
         console.log(err);
       })
+    
+    alert('Categoria Eliminada');
   }
 
   openDialogAgregar(): void {
@@ -163,6 +165,7 @@ export class CategoriaPlatoComponent implements OnInit {
       console.log(err);
     })
 
+    alert("Guardado Correctamente!!");
   }
 
   //------------------------------------------------
@@ -271,7 +274,7 @@ export class CategoriaPlatoComponent implements OnInit {
     console.log(idPlato);
     updateDoc(docInstance, datos)
     .then(() => {
-      console.log('Orden Pagada Exitosamente');
+      alert('Orden Pagada Exitosamente');
       // console.log(datos);
       })
       .catch((err) => {
@@ -298,7 +301,8 @@ export class CategoriaPlatoComponent implements OnInit {
     });
     if(this.temp) {
       this.carritoCompras = this.temp[0]['platillo'];
-      this.sumaTotal = this.temp[0]['precioPagar']
+      this.sumaTotal = this.temp[0]['precioPagar'];
+      alert('Se ha encontrado una Orden');
     }else {
       this.userService.carritoCompra = [];
     }
